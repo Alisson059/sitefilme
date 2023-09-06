@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  #filme {
+    width: 100%;              /* 100% da largura da página */
+    display: flex;            /* Alinhamento das divs */
+    justify-content: center;  /* Centralização das divs child */
+  
+    /*Envolve todo o conteúdo no campo de visão do usuário, retirando a barra de rolagem da horizontal, e quebrando o conteúdo*/
+    flex-wrap: wrap;          
+  }
+  
+  #filme div {
+    width: 25%;       /* largura de cada div child */
+    margin: 20px;     /* espaçamento externo de uma div para a outra */
+    transition: ease 1.5;    
+    box-shadow: 0px 1.5px 5px rgba(196, 0, 59, 0.568); /*Sombra da caixa: coordenada X, coordenada Y, esfumação, cor */
+    border-bottom-left-radius: 10px;   /* arredondamento da borda inferior à esquerda */
+    border-bottom-right-radius: 10px;  /* arredondamento da borda inferior à direita */
+    padding: 10px;   /*espaçamento interno */
+    /*padding-top: 130px;*/
+    /*margin-bottom: 130px;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+  }
+
+  #filme div img {
+    width: 100%;  /* largura da imagem em sua div */
+    border-bottom-left-radius: 10px;   /* arredondamento da borda inferior esquerda */
+    border-bottom-right-radius: 10px;  /* arredondamento da borda inferior direita */
+    box-shadow: 0px 2px 0.8x rgba(108, 0, 196, 0.123);
+    /*margin-top: -120px;   EU ADICIONEI AQUI!! */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    
+  }
+  
+  #filme div:hover {
+    transition: ease 2s;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 100vw rgba(92, 0, 196, 0.568);
+    border-radius: 5px;
+  }
+
+
+
+  
+  
+  
+  
